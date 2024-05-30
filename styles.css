@@ -1,75 +1,66 @@
 body {
-    font-family: "Poppins", sans-serif;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+}
 
-  h1 {
-    font-family: "poppins", sans-serif;
-    font-size:22px;
-    font-weight: 800;
-    margin: 10px;
-  }
+img {
+  width: 128px;
+  height: 128px;
+}
 
-  hr {
-    width: 100px;
-    height: 2px;
-    background: #E559F9;
-    margin: 5px;
-    border: none;
 
-  }
+.titulo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #29292E;
+}
 
-  img {
-    width: 128px;
-    height: 128px;
-  }
+hr {
+  width: 105px;
+  height: 2px;
+  background-color: #E559F9;
+  border: none;
+}
 
-  form {
-    display: flex;
-    flex-direction: column;
-    width:center;
-    margin: 30px;
-    gap: 5px;
-  }
+#formulario {
+  display: flex;
+  flex-direction: column;
+  margin-top: 80px;
+}
 
-  label {
-    font-family: "poppins", sans-serif;
-    font-size: 14px;
-    font-weight: 700;
-  }
+label {
+  font-size: 16px;
+  font-weight: bold;
+  color: #29292E;
+}
 
-  input {
-    width: fixed (320px)px;
-    height: fixed (50px)px;
-    top: 381px;
-    left: 560px;
-    margin-top: 381px;
-    padding: 13px, 12px, 13px, 16px;
-    border-radius: 8px;
-    font-weight: fixed 50px;
-    border: 1px solid #adadad;
-    margin-bottom: 10px;
-    font-size: 13px;
-    gap: 10px;
-  }
+input {
+  width: 320px;
+  border-radius: 8px;
+  border: 1px solid #A8A8B3;
+  padding: 15px 16px 15px 16px;
 
-  button {
-    width: fixed (320px)px;
-    height: fixed (40px)px;
-    padding: 10px 90px 10px 90px;
-    border-radius: 7px;
-    border: 1px solid #adadad;
-    color: #fff;
-    background: #184680;
-    font-weight: 600;
-    font-size: 12px;
-    cursor: pointer;
-  }
+  font-size: 16px;
+  font-weight: regular;
+  color: #A8A8B3;
+  margin-top: 8px;
+}
 
-  button:hover {
-    background: #12375e;
-  }
-  
+button {
+  background-color: #184680;
+  color: #ffffff;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 16px;
+}
 
+tabela-ceps {
+  margin-top: 30px;
+  width: 600px;
+  text-align: center;
+}

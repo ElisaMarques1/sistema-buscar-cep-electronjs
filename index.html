@@ -1,27 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, height=device-height>>, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
 
-    
-    <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-    <img src="imagens/image.png" alt=" imagem de um cadastro" />
-    <h1> buscar CEP</h1>
+  <img src="./imagens/image.png" alt="Logo do sistema">
 
-    <form onsubmit="lidarComFormulario()">
-    
-        <label for="CEP">CEP a Cidade</label>
-        <input id="CEP" type="text" name="CEP" placeholder="Digite seu CEP" />
+  <h1 class="titulo">Aplicativo para pesquisa de CEP</h1>
 
-        <button type="submit">pesquisar</button>
+  <hr />
 
-    </form>
+  <form id="formulario">
+    <label for="cep">CEP da cidade</label>
+    <input id="cep" type="text" name="cep" placeholder="Digite o CEP da cidade" />
+    <button type="submit">Pesquisar CEP</button>
+  </form>
+
+  
+
+  <table class="tabela-ceps">
+    <caption>
+      <h3>CEP's PESQUISADOS</h3>
+    </caption>
+    <thead>
+      <tr>
+        <th>CEP</th>
+        <th>Logradouro</th>
+        <th>Bairro</th>
+        <th>Cidade</th>
+        <th>UF</th>
+      </tr>
+    </thead>
+    <tbody id="tbody"> 
+      <tr>
+        <td>14813-000</td>
+        <td>Rua Bahia</td>
+        <td>Centro</td>
+        <td>Sorocaba</td>
+        <td>SP</td>
+      </tr>
+      <tr>
+        <td>14813-000</td>
+        <td>Rua Bahia</td>
+        <td>Centro</td>
+        <td>Sorocaba</td>
+        <td>SP</td>
+      </tr>
+      <tr>
+        <td>14813-000</td>
+        <td>Rua Bahia</td>
+        <td>Centro</td>
+        <td>Sorocaba</td>
+        <td>SP</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+
+
+  <!-- minha tag de script -->
+  <script src="script.js"></script>
 </body>
+
 </html>
